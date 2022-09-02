@@ -31,6 +31,9 @@ public class HomePageTest extends BaseTest{
 	public void verifyTitle() {
          System.out.println(driver.getTitle());
 	}
-
+      @Test (priority=4)
+	public void tearDown() {
+         driver.close();
+	}
 
 }
